@@ -1,0 +1,9 @@
+# môi trường ảo
+.venv/
+
+# python cache
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
