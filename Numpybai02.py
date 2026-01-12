@@ -64,13 +64,33 @@ print(vd5>5)#se cho thay dap an cua tung phan tu co dung voi dk
 print(vd5[vd5>5])#in ra man hinh cac so thoa dieu kien"""
 
 #thao tac hinh dang
-vd6=np.random.random(12)
+"""vd6=np.random.random(12)
 dang1=vd6.reshape(3,4)
 print(dang1)
-"""vd6.shape=(4,3)
+vd6.shape=(4,3)#cach chuyen hinh dang ma tran thay vì dùng reshape
+#khác ở chỗ nó thay đổi dựa trên ma trận ban đầu chớ không thêm ma trận
 print(vd6)
-vd6=vd6.ravel()
-print(vd6)"""
+vd6=vd6.ravel()#phuc hoi lai nhu cu
+print(vd6)
 print("============================")
-dang2=dang1.transpose()
-print(dang2)
+dang2=dang1.transpose()#ma tran chuyen vi
+print(dang2)"""
+
+#thao tac mang
+#hop nhat mang
+vd7= np.arange(10,19).reshape(3,3)
+"""vd8=np.ones((3,3))
+mergev=np.vstack((vd7,vd8))#hop theo chieu doc
+mergeh=np.hstack((vd7,vd8))#hop theo chieu ngang
+print(mergev)
+print(mergeh)
+print("=========================")
+splitv=np.vsplit(vd7,3)#tach theo chieu doc
+splith=np.hsplit(vd7,3)#tach theo chieu ngang
+print(splitv)
+print(splith)"""
+
+def foo(a):
+    return a*2
+vd9=np.apply_along_axis(foo,axis=0,arr=vd7)
+print(vd9)
