@@ -43,8 +43,8 @@ print("in ra 2 phan tu hang 0 va hang 2\n",vd[[0,2],0:2])"""
 #===========Tiếp tục buổi 3=========================
 #lap lai
 
-vd2=np.arange(5,17).reshape(3,4)
-"""print(vd2)
+"""vd2=np.arange(5,17).reshape(3,4)
+print(vd2)
 for i in vd2:
     for j in i:
         print(j)
@@ -91,6 +91,8 @@ print(splitv)
 print(splith)"""
 
 def foo(a):
-    return a*2
+    return a*2 #dinh nghia ham
 vd9=np.apply_along_axis(foo,axis=0,arr=vd7)
 print(vd9)
+
+

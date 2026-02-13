@@ -43,9 +43,10 @@ print(structs['diem'])#truy cập theo tên trường
 vd3=np.array([(201,'hoang',5.0),(202,'nhat',4.9)],dtype='int16,U6,float32')
 print(vd3)"""
 
+#tai va luu du lieu trong file nhi phan
 """vd4=np.random.random((3,3))
-print(vd4)"""
-#np.save('thunghiem',vd4)
+print(vd4)
+np.save('thunghiem',vd4)#luu du lieu vao file
 
-load1=np.load('thunghiem.npy')
-print(load1)
+load1=np.load('thunghiem.npy')#doc du lieu tu file
+print(load1)"""
